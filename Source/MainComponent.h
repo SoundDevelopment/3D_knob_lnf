@@ -1,0 +1,33 @@
+#pragma once
+
+#include <JuceHeader.h>
+
+#include "custom_3d_knob_lnf.h"
+
+//==============================================================================
+/*
+    This component lives inside our window, and this is where you should put all
+    your controls and content.
+*/
+
+class MainComponent  : public juce::Component
+{
+public:
+    //==============================================================================
+    MainComponent();
+    ~MainComponent() override;
+
+    //==============================================================================
+    void paint (juce::Graphics&) override;
+    void resized() override;
+
+private:
+    //==============================================================================
+    // Your private member variables go here...
+
+    custom_3d_knob_lnf m_3dKnobLook;
+
+    juce::Slider m_demoKnob { juce::Slider::SliderStyle::RotaryHorizontalVerticalDrag, juce::Slider::TextEntryBoxPosition::TextBoxBelow };
+
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
+};

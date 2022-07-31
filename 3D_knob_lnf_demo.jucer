@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="IfF7q8" name="3D_knob_lnf_demo" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="y2q9JG" name="3D_knob_lnf_demo">
+    <GROUP id="{679A5B0C-2F6D-57A4-4570-67414D60F335}" name="Source">
+      <FILE id="YXcbHz" name="custom_3d_knob_lnf.cpp" compile="1" resource="0"
+            file="Source/custom_3d_knob_lnf.cpp"/>
+      <FILE id="h53ymc" name="custom_3d_knob_lnf.h" compile="0" resource="0"
+            file="Source/custom_3d_knob_lnf.h"/>
+      <FILE id="w1NA1S" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="CY6Gjq" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="SaJyYd" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="3D_knob_lnf_demo"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="3D_knob_lnf_demo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Library/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="3D_knob_lnf_demo"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="3D_knob_lnf_demo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Library/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="3D_knob_lnf_demo"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="3D_knob_lnf_demo"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Library/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Library/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
