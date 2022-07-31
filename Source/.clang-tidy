@@ -1,0 +1,8 @@
+Checks: '-*,bugprone-*,cert-dcl21-cpp,cert-dcl50-cpp,cert-env33-c,cert-err34-c,cert-err52-cpp,cert-err60-cpp,cert-flp30-c,cert-msc50-cpp,cert-msc51-cpp,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,-cppcoreguidelines-macro-usage,-cppcoreguidelines-pro-type-reinterpret-cast,-cppcoreguidelines-pro-type-union-access,-cppcoreguidelines-pro-bounds-pointer-arithmetic,-cppcoreguidelines-pro-type-vararg,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,fuchsia-*,-fuchsia-default-arguments-calls,-fuchsia-default-arguments-declarations,google-*,-google-readability-braces-around-statements,-google-build-using-namespace,-google-readability-todo,hicpp-*,-hicpp-vararg,-hicpp-braces-around-statements,-hicpp-uppercase-literal-suffix,-hicpp-no-assembler,-hicpp-no-array-decay,misc-*,modernize-*,-modernize-use-trailing-return-type,performance-*,readability-*,-readability-named-parameter,-readability-braces-around-statements,-readability-implicit-bool-conversion,-readability-uppercase-literal-suffix'
+CheckOptions:
+    - key: bugprone-argument-comment.StrictMode
+      value: 1
+    - key: bugprone-exception-escape.FunctionsThatShouldNotThrow
+      value: WinMain,SDL_main
+    - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+      value: 1

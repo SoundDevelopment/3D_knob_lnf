@@ -3,18 +3,18 @@
 //==============================================================================
 MainComponent::MainComponent()
 {
+    m_demoKnob.setLookAndFeel (&m_3dKnobLook);
+    m_demoKnob.setTextValueSuffix ("%");
+    m_demoKnob.setRange ({ 0.0, 100.0 }, 0.0);
+    m_demoKnob.setNumDecimalPlacesToDisplay (1);
     addAndMakeVisible(m_demoKnob);
-    
-    juce::LookAndFeel::setDefaultLookAndFeel(&m_3dKnobLook);
-    m_demoKnob.setTextValueSuffix( "%" );
-    m_demoKnob.setRange( { 0.0, 100.0 }, 0.0 );
-    m_demoKnob.setNumDecimalPlacesToDisplay( 1 );
-    setSize (600, 400);
+
+    setSize (200, 200);
 }
 
 MainComponent::~MainComponent()
 {
-    juce::LookAndFeel::setDefaultLookAndFeel( nullptr );
+    m_demoKnob.setLookAndFeel (nullptr);
 }
 
 //==============================================================================
@@ -29,5 +29,5 @@ void MainComponent::resized()
     // This is called when the MainComponent is resized.
     // If you add any child components, this is where you should
     // update their positions.
-    m_demoKnob.setBounds( getLocalBounds() );
+    m_demoKnob.setBounds( getLocalBounds().reduced(5) );
 }

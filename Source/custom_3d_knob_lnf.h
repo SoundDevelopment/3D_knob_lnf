@@ -15,12 +15,12 @@
 
 #include <JuceHeader.h>
 
-class custom_3d_knob_lnf : public juce::LookAndFeel_V4
+class Custom_3d_knob_lnf : public juce::LookAndFeel_V4
 {
 public:
 
     // clang-format off
-    custom_3d_knob_lnf();
+    Custom_3d_knob_lnf();
 
     void drawRotarySlider( juce::Graphics& g, int x, int y, int width, int height, float sliderPos, float rotaryStartAngle, float rotaryEndAngle, juce::Slider& slider ) override;
 

@@ -25,9 +25,9 @@ private:
     //==============================================================================
     // Your private member variables go here...
 
-    custom_3d_knob_lnf m_3dKnobLook;
+    Custom_3d_knob_lnf m_3dKnobLook;
 
-    juce::Slider m_demoKnob { juce::Slider::SliderStyle::RotaryHorizontalVerticalDrag, juce::Slider::TextEntryBoxPosition::TextBoxBelow };
+    juce::Slider m_demoKnob { juce::Slider::SliderStyle::Rotary, juce::Slider::TextEntryBoxPosition::TextBoxBelow };
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MainComponent)
 };
