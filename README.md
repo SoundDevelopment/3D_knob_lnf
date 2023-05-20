@@ -1,8 +1,7 @@
 # 3D_knob_lnf
 A custom [Juce](https://juce.com/) LookAndFeel for a 3D rotary knob.<br>
 <img align="right" src="https://www.sounddevelopment.nl/sd/resources/images/3d_knob_lnf/3d_custom_knob.gif">
-*by Marcel Huibers | [Sound Development](https://www.sounddevelopment.nl) 2022*
-
+*by Marcel Huibers | [Sound Development](https://www.sounddevelopment.nl) 2023 | Published under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)*
 
 Features:
 - Fully **resize-able**.
