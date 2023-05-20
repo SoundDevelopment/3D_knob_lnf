@@ -15,4 +15,4 @@ For more details look at the included demo application.
 <br><br>
 
 -----
-*Sound Development 2022*
+*Sound Development 2023*
